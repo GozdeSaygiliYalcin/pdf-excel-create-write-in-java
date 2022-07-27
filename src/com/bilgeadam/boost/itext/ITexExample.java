@@ -16,7 +16,6 @@ public class ITexExample {
 	private final String FONT = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf";
 	private Document pdf;
 	private Font font;
-	private PdfWriter writer;
 
 	public static void main(String[] args) {
 		
@@ -41,9 +40,8 @@ public class ITexExample {
 	private void createPDDFile() throws Exception {
 		this.pdf = new Document(PageSize.A4, 20, 20, 20, 20);
 		
-		
 		FileOutputStream fos = new FileOutputStream("/Users/gozde/Desktop/Coding/01-BilgeAdam_Boost/ITextExample/itex.pdf");
-		this.writer =PdfWriter.getInstance(this.pdf, fos);
+		PdfWriter.getInstance(this.pdf, fos);
 		
 	}
 	

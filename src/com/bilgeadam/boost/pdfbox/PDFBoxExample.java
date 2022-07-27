@@ -17,8 +17,8 @@ public class PDFBoxExample {
 		
 		PDFBoxExample pdfBox = new PDFBoxExample();
 		try {
-//			pdfBox.createPDF();
-//			pdfBox.createPDFWithImage();
+			pdfBox.createPDF();
+			pdfBox.createPDFWithImage();
 			pdfBox.readPDF();
 			
 		} catch (Exception e) {
